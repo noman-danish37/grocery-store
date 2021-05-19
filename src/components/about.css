@@ -1,0 +1,18 @@
+.about{
+    background-color: cadetblue;
+}
+.about .title{
+    margin-left: 3vw;
+}
+.about .about-content{
+    
+    text-align: center;
+}
+
+.about h2{
+    text-align: center;
+
+}
+.about h3{
+    text-align: center;
+}

@@ -1,0 +1,19 @@
+.cart-icon {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 34px;
+}
+.cart-icon .shopping-icon {
+    width: 24px;
+    height: 24px;
+}
+@media only screen and (max-width: 1000px){
+    .cart-icon{
+        margin-left: 3px;
+    }
+}
