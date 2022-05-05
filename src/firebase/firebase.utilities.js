@@ -19,9 +19,15 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
 
   const userRef = firestore.doc(`users/${userAuth.uid}`);
-
-  const snapShot = await userRef.get();
-
+//snapshot allows us to check whether or not there's an instance of data that exits inside of a database
+// and it also allows us to access the data
+  
+    const snapShot = await userRef.get();
+    
+    
+//if user data exists i just want to return this user document reference
+// if user data doesnt exist then i want to create a set of document with the data from user auth in my collection.
+    
   if (!snapShot.exists) {
     const { displayName, email } = userAuth;
     const createdAt = new Date();
